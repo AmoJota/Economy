@@ -16,7 +16,7 @@ public class GeneralEconomy : MonoBehaviour
 
         GetPlayerBalance();
     }
-    private async void SincroniceConfiguration()
+    public async void SincroniceConfiguration()
     {
         //SyncConfigurationAsync() caches the latest version of your Economy configuration.
         //Gets the currently published Economy configuration and caches it in the SDK.
@@ -103,7 +103,7 @@ public class GeneralEconomy : MonoBehaviour
         string currencyID = "GOLD";
         CurrencyDefinition goldCurrencyDefinition = EconomyService.Instance.Configuration.GetCurrency(currencyID);
     }
-    private async void GetPlayerBalance()
+    public async void GetPlayerBalance()
     {
         await EconomyService.Instance.Configuration.SyncConfigurationAsync();
         

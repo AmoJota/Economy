@@ -31,5 +31,6 @@ public class Inventory : MonoBehaviour
 
         string itemID = catchItem;
         InventoryItemDefinition definition = EconomyService.Instance.Configuration.GetInventoryItem(itemID);
+        
     }
 }
