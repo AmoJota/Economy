@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
+  m_Name: RemoteConfigDataStoreAsset
+  m_EditorClassIdentifier: 
+  _rsKeyList: '[]'
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"c841caf6-440f-4902-921b-abd8492073ef\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"BOOTS\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"defe0671-dbd4-4792-8017-0ad53b00eb1a\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"BUY_BOOTS\",\r\n      \"type\": \"int\",\r\n      \"value\": 0\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"e572412f-e6b6-4731-b68f-38b808f8e5b2\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"GOLD\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 10\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"2f5c840e-c880-4c55-9ce3-b0c73dade6b4\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"IRON\",\r\n      \"type\": \"int\",\r\n      \"value\": 0\r\n    }\r\n 
+    },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"f056e6eb-f2f4-4d81-8c28-34deb3e0a33a\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"SHIELD\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"0bb166e3-7afc-4fb5-b89b-1decb6f9e2e2\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"BUY_METAL_ORB\",\r\n      \"type\": \"int\",\r\n      \"value\": 0\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"5288085a-f128-42d9-a186-064eac1a4622\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"BUY_SHIELD\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"a5b9cd6a-d5fb-4a43-a21a-53c385bc2ad4\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"IRIUM\",\r\n      \"type\": \"int\",\r\n      \"value\": 0\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"030820b3-918f-4d2b-a7d1-ee6e10cf32db\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"BUY_SWORD\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 0\r\n    }\r\n  }\r\n]"
+  _environments: "[\r\n  {\r\n    \"projectId\": \"306d7c8e-35be-4be2-b9fd-b924d74cbff5\",\r\n   
+    \"name\": \"production\",\r\n    \"id\": \"d6d096fa-178d-41f8-b060-eef13c7702a9\",\r\n   
+    \"isDefault\": true,\r\n    \"createdAt\": \"2023-10-13T13:36:37Z\",\r\n    \"updatedAt\":
+    \"2023-10-13T13:36:37Z\"\r\n  }\r\n]"
