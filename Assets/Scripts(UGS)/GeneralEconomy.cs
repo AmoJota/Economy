@@ -2,9 +2,10 @@ using UnityEngine;
 using Unity.Services.Economy;
 using Unity.Services.Economy.Model;
 using System.Collections.Generic;
-
+using TMPro;
 public class GeneralEconomy : MonoBehaviour
 {
+    [SerializeField] TMP_Text goldText, iriumText;
     private void Start()
     {
         SincroniceConfiguration(); //Llamar antes de cualquier request.
@@ -102,14 +103,20 @@ public class GeneralEconomy : MonoBehaviour
     {
         await EconomyService.Instance.Configuration.SyncConfigurationAsync();
 
-
         //This method gets the balance for the currently signed in player of the currency specified in the CurrencyDefinition.
         //It returns a PlayerBalance as specified in Player balances.
 
-        string currencyID = "GOLD";
-        CurrencyDefinition goldCurrencyDefinition = EconomyService.Instance.Configuration.GetCurrency(currencyID);
+        string goldID = "GOLD";
+        CurrencyDefinition goldCurrencyDefinition = EconomyService.Instance.Configuration.GetCurrency(goldID);
         PlayerBalance playersGoldBarBalance = await goldCurrencyDefinition.GetPlayerBalanceAsync();
+        goldText.text = playersGoldBarBalance.Balance.ToString();
+
+        string iriumID = "IRIUM";
+        CurrencyDefinition iriumCurrencyDefinition = EconomyService.Instance.Configuration.GetCurrency(iriumID);
+        PlayerBalance playersiriumBarBalance = await iriumCurrencyDefinition.GetPlayerBalanceAsync();
+        iriumText.text = playersiriumBarBalance.Balance.ToString();
     }
+
     private async void GetInventoryItems()
     {
         await EconomyService.Instance.Configuration.SyncConfigurationAsync();
